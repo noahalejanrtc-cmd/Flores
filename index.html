@@ -75,7 +75,7 @@
 </div>
 
 <audio id="audio" loop="">
-  <source src="https://cdn.dedicacodes.com/t/galaxia-nebulosa-flores-amarillas/1.0.0/assets/musica.mp3" type="audio/mpeg">
+  <source src="assets/música.mp3.m4a" type="audio/mp4">
 </audio>
 
 <script src="./Galaxia Simple - Agujero Negro, Día de las Flores Amarillas_files/three.min.js.descarga"></script>
@@ -359,12 +359,9 @@ function startExperience(){
 startScreen.addEventListener('click',startExperience);
 </script>
 
-  <audio id="audio" loop>
-  <source src="activos/música.mp3.m4a" type="audio/mp4">
-</audio>
+ 
 
 <script>
-const audio = document.getElementById('audio');
 
 document.addEventListener('click', function iniciarMusica() {
   audio.play().catch(error => console.log(error));
