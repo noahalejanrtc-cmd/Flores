@@ -352,6 +352,10 @@ const startScreen=document.getElementById('start-screen');
 
 startScreen.onclick=function(){
   this.style.display='none';
+
+  const musicaNueva = new Audio('assets/musica.m4a');
+  musicaNueva.loop = true;
+  musicaNueva.play();
 };
 </script>
 
