@@ -349,6 +349,7 @@ function tick(){requestAnimationFrame(tick);t+=0.01;
 tick();
 
 // ── Arranque: la musica recien empieza cuando se toca la pantalla ──
+const audio=document.getElementById('audio');
 const startScreen=document.getElementById('start-screen');
 function startExperience(){
   startScreen.classList.add('hidden');
