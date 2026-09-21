@@ -355,7 +355,7 @@ startScreen.onclick=function(){
 
   const musicaNueva = new Audio('assets/musica.m4a');
   musicaNueva.loop = true;
-  musicaNueva.play();
+  musicaNueva.play().catch(error => console.log('Error audio:', error));
 };
 </script>
 
