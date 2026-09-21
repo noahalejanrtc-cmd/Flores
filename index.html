@@ -359,5 +359,20 @@ function startExperience(){
 startScreen.addEventListener('click',startExperience);
 </script>
 
+  <audio id="audio" loop>
+  <source src="activos/música.mp3.m4a" type="audio/mp4">
+</audio>
+
+<script>
+const audio = document.getElementById('audio');
+
+document.addEventListener('click', function iniciarMusica() {
+  audio.play().catch(error => console.log(error));
+}, { once: true });
+
+document.addEventListener('touchstart', function iniciarMusicaMovil() {
+  audio.play().catch(error => console.log(error));
+}, { once: true });
+</script>
 
 </body></html>
